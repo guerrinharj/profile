@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans+Condensed:ital,wght@0,300;1,300&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+body {
+ font-family: 'Open Sans Condensed', sans-serif;
+ font-weight: 300;
+ -webkit-font-smoothing: antialiased;
+ background-color: cornsilk;
+ letter-spacing: -1px;
+ overflow: hidden;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2vw
+}
+
+.card {
+  width: 50%;
+  margin: auto;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 1.2rem
+}
+
+
+#profilepic {
+  width: 200px
+}
+
+a {
+  text-decoration: none;
+  color: maroon;
+}
+
+#lewagonlink {
+  padding: 10px;
+  background-color: lightsalmon;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  font-size: 18px;
+}
+
+#lewagonlink:hover {
+  color: red;
+  background-color: white;
+  transition: 0.3s ease;
+}
+
+.follow-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.follow-list li a img {
+  width: 20px;
+  transition: 0.5s ease;
+}
+
+.follow-list li a img:hover {
+  transform: translateY(-20%);
+  transition: 0.5s ease;
+}
+
+@media(max-width: 600px) {
+
+  article {
+    height: 100vh;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  p {
+    margin: 50px
+  }
+
+  #lewagonlink {
+    font-size: 20px;
+    padding: 10px 70px;
+  }
+}
